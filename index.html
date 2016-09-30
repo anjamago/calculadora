@@ -10,39 +10,40 @@
 	<header id='cabecera'>
 	<h1>Selecione una de las dos opciones</h1>
 		<ul id="select-cal">
-			<li onclick="touch()">Calculadora de interfaz</li>
-			<li onclick="init()" >Calculadora sin inerfaz</li>
+			<li onclick="touch(status)">Calculadora de interfaz</li>
+			<li onclick="init()" >Calculadora sin interfaz</li>
 		</ul>
 	</header>
 	<section>
-		<span id='display'></span>
+
 		<article id='touch'>
+				<div id='display'></div>
 			<blokuote class='keys'>
 				<ul>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-					<li>6</li>
-					<li>7</li>
-					<li>8</li>
-					<li>9</li>
+					<li onclick="digital(1)">1</li>
+					<li onclick="digital(2)">2</li>
+					<li onclick="digital(3)">3</li>
+					<li onclick="digital(4)">4</li>
+					<li onclick="digital(5)">5</li>
+					<li onclick="digital(6)">6</li>
+					<li onclick="digital(7)">7</li>
+					<li onclick="digital(8)">8</li>
+					<li onclick="digital(9)">9</li>
 
-					<li id='key-0'>0</li>
+					<li onclick="digital(0)" id='key-0'>0</li>
 				</ul>
 			</blokuote>
 			<blokuote class='keys' id='function'>
 				<ul>
-					<li onclick="funcion = '%'">%</li>
+					<li onclick="funcion = '/'">%</li>
 					<li onclick="funcion = 'x'">x</li>
 					<li onclick="funcion = '-'">-</li>
 					<li onclick="funcion = '+'">+</li>
 					<li onclick="ejecutar()">=</li>
 				</ul>
 			</blokuote>
-		</article>			
+		</article>
 	</section>
-	
+
 </body>
 </html>
