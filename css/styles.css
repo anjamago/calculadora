@@ -7,11 +7,21 @@
 body{
 	padding:5% 20%;
 }
-section{
-	border: 1px solid red;
-}
-article > blokuote{
 
+article{
+	display: block;
+	width: 100%;
+}
+article .keys {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+article > #function{
+	float: top
+}
+#touch{
+	display: none;
 }
 #cabecera{
 	display: block;
@@ -31,7 +41,23 @@ article > blokuote{
 	padding-left: 10px;
 
 }
-.keys{
-
-	border:1px solid blue;
+.keys ul{
+	margin: 5px;
+}
+.keys ul li{
+	
+	border:1px solid #a4a5b7;
+	padding: 2em;
+	margin: 5px;
+	display: inline-block;
+	border-radius: 7px;
+}
+.keys ul li:hover{
+	background-color: #a4a5b7;
+	border-color: #9a9999;
+	font-weight: bold;
+}
+#key-0{
+	display: block;
+    text-align: center;
 }
