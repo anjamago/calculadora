@@ -1,0 +1,37 @@
+@import 'https://fonts.googleapis.com/css?family=Inconsolata';
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Inconsolata', monospace;
+}
+body{
+	padding:5% 20%;
+}
+section{
+	border: 1px solid red;
+}
+article > blokuote{
+
+}
+#cabecera{
+	display: block;
+    height: auto;
+	text-align: center;
+	border: 1px solid red;
+}
+#select-cal{
+	width: 100%;
+	display: inline-flex;
+	list-style: none;
+
+}
+#select-cal li{
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+.keys{
+
+	border:1px solid blue;
+}
